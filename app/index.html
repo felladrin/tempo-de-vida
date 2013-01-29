@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>Tempo de Vida</title>
+        <link rel="stylesheet" href="jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="tempodevida.css" />
+    </head>
+    <body>
+        <div data-theme="b" data-role="page" id="home">
+            <div data-theme="b" data-role="header" data-position="inline">
+                <h1>Tempo de Vida</h1>
+                <a class="ui-btn-right" data-transition="fade" data-iconpos="notext" data-icon="info" href="#about" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="f" title="Sobre"></a>
+            </div>
+            <div class='bloco arredondado'>
+                <h3>Data de Nascimento</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <select id="nascimentoDia" onchange="calcula();">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="nascimentoMes" onchange="calcula();">
+                                <option value="1">Janeiro</option>
+                                <option value="2">Fevereiro</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
+                                <option value="6">Junho</option>
+                                <option value="7">Julho</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <input id="nascimentoAno" type="number" value="1988" onkeyup="calcula();"/>
+            </div>
+
+            <div class='bloco arredondado'>
+                <h3>Idade Atual</h3>
+                <p><span id="idadeAnos">0</span> anos, <span id="idadeMeses">0</span> meses e <span id="idadeDias">0</span> dias</p>
+            </div>
+
+            <div class='bloco arredondado'>
+                <h3>Aniversário</h3>
+                <p><span id="proxAniversario">Daqui a 0 dias</span></p>
+            </div>
+
+            <div class='bloco arredondado'>
+                <h3>Tempo Vivido</h3>
+                <table>
+                    <tr><td>Em meses:</td><td><span id="tempoMeses">0</span></td></tr>
+                    <tr><td>Em dias:</td><td><span id="tempoDias">0</span></td></tr>
+                    <tr><td>Em horas:</td><td><span id="tempoHoras">0</span></td></tr>
+                    <tr><td>Em minutos:</td><td><span id="tempoMinutos">0</span></td></tr>
+                </table>
+            </div>
+        </div>
+        
+        <div data-theme="b" data-role="page" id="about">
+            <div data-theme="b" data-role="header" data-position="inline">
+                <a data-direction="reverse" data-iconpos="notext" data-icon="home" href="index.html" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="f" title="Home"></a>
+                <h1>Tempo de Vida</h1>
+            </div>
+            <div class='bloco arredondado'>
+                <p>Autor: Victor Nogueira</p>
+                <p>Versão: 1.0 (27/01/2013)</p>
+                <p>Lançamento: 27/01/2013</p>
+                <p>Distribuição Gratuita</p>
+            </div>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script src="jquery.mobile-1.2.0.min.js"></script>
+        <script src="tempodevida.js"></script>
+        <script>calcula();</script>
+    </body>
+</html>
