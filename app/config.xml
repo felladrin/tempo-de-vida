@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id      = "felladrin.tempodevida"
+    id          = "felladrin.tempodevida"
     versionCode = "102"
     version     = "1.0.2" >
 
@@ -19,8 +19,9 @@
 
     <icon src="icon.png" />
 
-    <preference name="orientation"      value="portrait" />
-    <preference name="target-device"    value="universal" />
-    <preference name="fullscreen"       value="false" />
-    <preference name="permissions"      value="none"/>
+    <preference name="target-device" value="universal" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="permissions" value="none"/>
+    <preference name="android-targetSdkVersion" value="26"/>
 </widget>
