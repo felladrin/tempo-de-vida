@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns       = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "felladrin.tempodevida"
-        versionCode = "101"
-        version     = "1.0.1">
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id      = "felladrin.tempodevida"
+    versionCode = "102"
+    version     = "1.0.2" >
 
-    <name>Tempo de Vida</name>
+  <name>Tempo de Vida</name>
 
-    <description>
-        Calculadora de Tempo de Vida. Baseando-se em uma data de aniversário, este aplicativo indica a idade atual, dias para o próximo aniversário, e tempo vivido em meses, dias, horas e minutos.
-    </description>
+  <description>
+      Calculadora de Tempo de Vida. Baseando-se em uma data de aniversário,
+      este aplicativo indica a idade atual, dias para o próximo aniversário,
+      e tempo vivido em meses, dias, horas e minutos.
+  </description>
 
     <author href="http://felladrin.github.io/" email="felladrin@gmail.com">
         Victor Nogueira (Felladrin)
@@ -17,9 +19,7 @@
 
     <icon src="icon.png" />
 
-    <feature name="http://api.phonegap.com/1.0/device" />
-
-    <preference name="orientation"      value="default" />
+    <preference name="orientation"      value="portrait" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
     <preference name="permissions"      value="none"/>
